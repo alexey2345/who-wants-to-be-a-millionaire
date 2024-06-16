@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="wrapper"> 
+    <div class="helpframe">
+        <div class="help">
+            <a class="helpbutton" id="splitAnswers" onclick="split()">
+                <img src="split.png" class="helpbutton">
+            </a>
+            <div class="help-text">50:50</div>
+        </div>
+        <div class="help">
+            <a class="helpbutton" id="phoneCall" onclick="call()">
+                <img src="phone.png" class="helpbutton">
+            </a>
+            <div class="help-text">להתקשר לחבר</div>
+        </div>
+        <div class="help">
+            <a class="helpbutton" id="peoplesChoice" onclick="poll()">
+                <img src="person.png" class="helpbutton">
+            </a>
+            <div class="help-text">שאל את הקהל</div>
+        </div>
+    </div>
+    <div class="topframe">
+        <div>
+            <h2 class="prizes" id="prize10">$1000000</h2>
+            <h2 class="prizes" id="prize9">$900000</h2>
+            <h2 class="prizes" id="prize8">$500000</h2>
+            <h2 class="prizes" id="prize7">$32400</h2>
+            <h2 class="prizes" id="prize6">$10800</h2>
+            <h2 class="prizes" id="prize5">$3600</h2>
+            <h2 class="prizes" id="prize4">$1200</h2>
+            <h2 class="prizes" id="prize3">$600</h2>
+            <h2 class="prizes" id="prize2">$300</h2>
+            <h2 class="prizes" id="prize1">$100</h2>
+        </div>
+        <img src="who-wants-to-be-a-millionaire-logo-png-transparent.png" class="logoimage">
+    </div>
+    <div id="current-prize">Current Prize: $0</div>
+    <div class="bottomframe">
+        <div class="answerframe">
+            <div class="question" id="question"></div>
+        </div>
+        <div class="answerframe">
+            <div onclick="answer(0)" class="answers" id="answer1"></div>
+            <div onclick="answer(1)" class="answers" id="answer2"></div>
+            <div onclick="answer(2)" class="answers" id="answer3"></div>
+            <div onclick="answer(3)" class="answers" id="answer4"></div>
+        </div>
+    </div>
+    <div onclick="startGame()" id="start">START</div>
+</div>
+</body>
+</html>
